@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "http://rdf.ncbi.nlm.nih.gov/",
+    "from": {
+      "@type": "@id"
+    },
+    "pubmed": "db/pubmed/",
+    "protein": "db/protein/",
+    "gene": "db/gene/",
+    "protein_gene": {
+      "@type": "@vocab"
+    },
+    "id": {
+      "@type": "@id"
+    },
+    "score": {
+      "@type": "xsd:integer"
+    }
+  }
+}
