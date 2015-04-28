@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+  Example from
+  http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
+    ?dbfrom=nuccore&id=21614549,219152114&cmd=ncheck
+-->
+
+<!DOCTYPE eLinkResult 
+  PUBLIC "-//NLM//DTD eLinkResult, 23 November 2010//EN" 
+  "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
+
+<eLinkResult>
+    <LinkSet>
+        <DbFrom>nuccore</DbFrom>
+        <IdCheckList>
+            <Id HasNeighbor="Y">21614549</Id>
+            <Id HasNeighbor="N">219152114</Id>
+        </IdCheckList>
+    </LinkSet>
+</eLinkResult>

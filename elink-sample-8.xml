@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+  Example from
+  http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
+     ?dbfrom=protein&db=gene&id=15718680&id=157427902&id=119703751
+-->
+
+<!DOCTYPE eLinkResult 
+  PUBLIC "-//NLM//DTD eLinkResult, 23 November 2010//EN" 
+  "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
+
+<eLinkResult>
+    <LinkSet>
+        <DbFrom>protein</DbFrom>
+        <IdList>
+            <Id>15718680</Id>
+        </IdList>
+        <LinkSetDb>
+            <DbTo>gene</DbTo>
+            <LinkName>protein_gene</LinkName>
+            
+                <Link>
+                <Id>3702</Id>
+            </Link>
+            
+        </LinkSetDb>
+    </LinkSet>
+
+    <LinkSet>
+        <DbFrom>protein</DbFrom>
+        <IdList>
+            <Id>157427902</Id>
+        </IdList>
+        <LinkSetDb>
+            <DbTo>gene</DbTo>
+            <LinkName>protein_gene</LinkName>
+            
+                <Link>
+                <Id>522311</Id>
+            </Link>
+            
+        </LinkSetDb>
+    </LinkSet>
+
+    <LinkSet>
+        <DbFrom>protein</DbFrom>
+        <IdList>
+            <Id>119703751</Id>
+        </IdList>
+        <LinkSetDb>
+            <DbTo>gene</DbTo>
+            <LinkName>protein_gene</LinkName>
+            
+                <Link>
+                <Id>16428</Id>
+            </Link>
+            
+        </LinkSetDb>
+    </LinkSet>
+</eLinkResult>
