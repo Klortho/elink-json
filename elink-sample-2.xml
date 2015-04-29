@@ -27,18 +27,8 @@
                 <Id>15466689</Id>
                 <Score>66865452</Score>
             </Link>
-            <Link>
-                <Id>12956738</Id>
-                <Score>64959303</Score>
-            </Link>
             <!--  ...  -->
-            <Link>
-                <Id>19987275</Id>
-                <Score>6074878</Score>
-            </Link>
         </LinkSetDb>
-        
-        
         <LinkSetDb>
             <DbTo>pubmed</DbTo>
             <LinkName>pubmed_pubmed_citedin</LinkName>
@@ -50,26 +40,7 @@
                 <Id>24915164</Id>
                 <Score>20210808</Score>
             </Link>
-            <Link>
-                <Id>24295277</Id>
-                <Score>20210808</Score>
-            </Link>
-            <Link>
-                <Id>22894816</Id>
-                <Score>20210808</Score>
-            </Link>
-            <Link>
-                <Id>22240244</Id>
-                <Score>20210808</Score>
-            </Link>
-            <Link>
-                <Id>21913196</Id>
-                <Score>20210808</Score>
-            </Link>
-            <Link>
-                <Id>21710109</Id>
-                <Score>20210808</Score>
-            </Link>
+            <!-- ... -->
         </LinkSetDb>
         <LinkSetDb>
             <DbTo>pubmed</DbTo>
@@ -82,87 +53,8 @@
                 <Id>15466689</Id>
                 <Score>66865452</Score>
             </Link>
-            <Link>
-                <Id>12956738</Id>
-                <Score>64959303</Score>
-            </Link>
-            <Link>
-                <Id>12376064</Id>
-                <Score>56460889</Score>
-            </Link>
-            <Link>
-                <Id>15125698</Id>
-                <Score>50774274</Score>
-            </Link>
+            <!-- ... -->
         </LinkSetDb>
-        <LinkSetDb>
-            <DbTo>pubmed</DbTo>
-            <LinkName>pubmed_pubmed_five</LinkName>
-            <Link>
-                <Id>15876306</Id>
-                <Score>75133399</Score>
-            </Link>
-            <Link>
-                <Id>15466689</Id>
-                <Score>66865452</Score>
-            </Link>
-            <Link>
-                <Id>12956738</Id>
-                <Score>64959303</Score>
-            </Link>
-            <Link>
-                <Id>11149990</Id>
-                <Score>61522749</Score>
-            </Link>
-            <Link>
-                <Id>9275137</Id>
-                <Score>61364505</Score>
-            </Link>
-        </LinkSetDb>
-        <LinkSetDb>
-            <DbTo>pubmed</DbTo>
-            <LinkName>pubmed_pubmed_reviews</LinkName>
-            <Link>
-                <Id>12376064</Id>
-                <Score>56460889</Score>
-            </Link>
-            <Link>
-                <Id>15125698</Id>
-                <Score>50774274</Score>
-            </Link>
-            <Link>
-                <Id>10931782</Id>
-                <Score>50227044</Score>
-            </Link>
-            <!--  ...  -->
-            <Link>
-                <Id>23253683</Id>
-                <Score>17272109</Score>
-            </Link>
-        </LinkSetDb>
-        <LinkSetDb>
-            <DbTo>pubmed</DbTo>
-            <LinkName>pubmed_pubmed_reviews_five</LinkName>
-            <Link>
-                <Id>12376064</Id>
-                <Score>56460889</Score>
-            </Link>
-            <Link>
-                <Id>15125698</Id>
-                <Score>50774274</Score>
-            </Link>
-            <Link>
-                <Id>10931782</Id>
-                <Score>50227044</Score>
-            </Link>
-            <Link>
-                <Id>10096822</Id>
-                <Score>48788287</Score>
-            </Link>
-            <Link>
-                <Id>12582308</Id>
-                <Score>48635669</Score>
-            </Link>
-        </LinkSetDb>
+        <!-- ... -->
     </LinkSet>
 </eLinkResult>

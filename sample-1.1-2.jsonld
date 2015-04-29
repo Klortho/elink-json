@@ -1,0 +1,32 @@
+{
+  "@context": "http://chrismaloney.org/elink-jsonld/context.jsonld",
+  "dbfrom": "pubmed",
+  "idlist": {
+    "@context": {
+      "@vocab": "http://rdf.ncbi.nlm.nih.gov/db/pubmed/"
+    },
+    "@set": [
+      "1000",
+      "2000"
+    ]
+  },
+  "pubmed_pubmed_five": {
+    "@context": {
+      "@vocab": "http://rdf.ncbi.nlm.nih.gov/db/pubmed/"
+    },
+    "@set": [
+      "2000",
+      "1000",
+      "1002",
+      "1001",
+      "687380",
+      "4155068",
+      "174080",
+      "730378",
+      "3537005",
+      "970938",
+      "4013575",
+      "5742340"
+    ]
+  }
+}

@@ -22,18 +22,16 @@ Serving the context file, for now, from
 
 * Eutils XML: [?dbfrom=protein&db=gene&id=15718680,157427902](http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=protein&db=gene&id=15718680,157427902)
 * elink-sample-1.xml
-* JSON-LD Playground: [here](http://tinyurl.com/oyfchkl) or
-  [here](http://tinyurl.com/o8mx5zy) (with embedded contexts)
+* JSON-LD Playground:
+    * [IDs as CURIEs](http://tinyurl.com/oyfchkl), or
+    * [IDs as bare numbers](http://tinyurl.com/o8mx5zy) - uses embedded contexts
 
-Question: do we need to have the identifier prefix on every ID inside each container in the
-output?  I think, yes. I looked at this for a while, but couldn't find any way to cleanly provide
-a "vocabulary URL prefix" for a given predicate. The closest I got was
-[this gist](http://json-ld.org/playground/#/gist/e17eaaf164610a94c8fd), based on 
-[this SO 
-question](http://stackoverflow.com/questions/26633788/in-json-ld-is-it-possible-to-define-a-uri-mapping-for-a-property-value), 
-but it is not right.  The URL prefix for the gene identifiers are the one global "links" vocabulary.
-
-[This](http://json-ld.org/playground/#/gist/0948a2251589826433ae) is pretty good.
+It would be nice to be able to use simple numerical ID numbers for, for example, the
+objects of the *protein_gene* predicate. This should be possible, since it's clear
+that, for that predicate, the targets are IDs in the *gene* database.
+But, the only way I found to to this is by embedding contexts in the output document,
+to redefine `@vocab`. See [this SO 
+question](http://stackoverflow.com/questions/29905670/how-to-cleanly-specify-predicate-specific-uri-scopes-in-json-ld).
 
 ## Example 1.1 - basic
 
