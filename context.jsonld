@@ -2,7 +2,7 @@
   "@context": {
     "@vocab": "http://rdf.ncbi.nlm.nih.gov/",
     "from": {
-      "@type": "@id"
+      "@type": "@vocab"
     },
     "pubmed": "db/pubmed/",
     "protein": "db/protein/",
