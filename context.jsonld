@@ -1,6 +1,7 @@
 {
   "@context": {
     "@vocab": "http://rdf.ncbi.nlm.nih.gov/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "from": {
       "@type": "@vocab"
     },

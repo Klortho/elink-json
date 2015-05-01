@@ -1,0 +1,37 @@
+{
+  "@context": "http://chrismaloney.org/elink-jsonld/context.jsonld",
+  "db": "pubmed",
+  "idlist": [
+    "157427902"
+  ],
+  "pubmed_pubmed": [
+    {
+      "id": "15876306",
+      "score": "75133399"
+    },
+    {
+      "id": "15466689",
+      "score": "66865452"
+    }
+  ],
+  "pubmed_pubmed_citedin": [
+    {
+      "id": "24952205",
+      "score": "20210808"
+    },
+    {
+      "id": "24915164",
+      "score": "20210808"
+    }
+  ],
+  "pubmed_pubmed_combined": [
+    {
+      "id": "15876306",
+      "score": "75133399"
+    },
+    {
+      "id": "15466689",
+      "score": "66865452"
+    }
+  ]
+}

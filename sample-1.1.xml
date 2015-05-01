@@ -26,34 +26,7 @@
             <Link>
                 <Id>1002</Id>
             </Link>
-            <Link>
-                <Id>1001</Id>
-            </Link>
-            <Link>
-                <Id>687380</Id>
-            </Link>
-            <Link>
-                <Id>4155068</Id>
-            </Link>
-            <Link>
-                <Id>174080</Id>
-            </Link>
-            <Link>
-                <Id>730378</Id>
-            </Link>
-            <Link>
-                <Id>3537005</Id>
-            </Link>
-            <Link>
-                <Id>970938</Id>
-            </Link>
-            <Link>
-                <Id>4013575</Id>
-            </Link>
-            <Link>
-                <Id>5742340</Id>
-            </Link>
-            
+            <!-- ... -->
         </LinkSetDb>
     </LinkSet>
 </eLinkResult>

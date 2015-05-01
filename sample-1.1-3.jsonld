@@ -1,0 +1,16 @@
+{
+  "@context": "http://chrismaloney.org/elink-jsonld/context.jsonld",
+  "db": "pubmed",
+  "idlist": [
+    "1000",
+    "2000"
+  ],
+  "pubmed_pubmed_five": {
+    "db": "pubmed",
+    "idlist": [
+      "2000",
+      "1000",
+      "1002"
+    ]
+  }
+}

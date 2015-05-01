@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+  Example from 
+  http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
+      ?dbfrom=protein&id=15718680,157427902&cmd=acheck
+-->
+<!DOCTYPE eLinkResult 
+  PUBLIC "-//NLM//DTD eLinkResult, 23 November 2010//EN" 
+  "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
+
+<eLinkResult>
+    <LinkSet>
+        <DbFrom>protein</DbFrom>
+        <IdCheckList>
+            <IdLinkSet>
+                <Id>15718680</Id>
+                <LinkInfo>
+                    <DbTo>bioproject</DbTo>
+                    <LinkName>protein_bioproject</LinkName>
+                    <MenuTag>BioProject Links</MenuTag>
+                    <HtmlTag>BioProject</HtmlTag>
+                    <Priority>128</Priority>
+                </LinkInfo>
+                <LinkInfo>
+                    <DbTo>biosystems</DbTo>
+                    <LinkName>protein_biosystems</LinkName>
+                    <MenuTag>BioSystem Links</MenuTag>
+                    <HtmlTag>BioSystems</HtmlTag>
+                    <Priority>128</Priority>
+                </LinkInfo>
+                <!-- ... -->
+            </IdLinkSet>
+            <IdLinkSet>
+                <Id>157427902</Id>
+                <LinkInfo>
+                    <DbTo>bioproject</DbTo>
+                    <LinkName>protein_bioproject</LinkName>
+                    <MenuTag>BioProject Links</MenuTag>
+                    <HtmlTag>BioProject</HtmlTag>
+                    <Priority>128</Priority>
+                </LinkInfo>
+                <LinkInfo>
+                    <DbTo>biosystems</DbTo>
+                    <LinkName>protein_biosystems</LinkName>
+                    <MenuTag>BioSystem Links</MenuTag>
+                    <HtmlTag>BioSystems</HtmlTag>
+                    <Priority>128</Priority>
+                </LinkInfo>
+                <!-- ... -->
+            </IdLinkSet>
+        </IdCheckList>
+    </LinkSet>
+</eLinkResult>

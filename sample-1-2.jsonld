@@ -1,6 +1,6 @@
 {
   "@context": "http://chrismaloney.org/elink-jsonld/context.jsonld",
-  "dbfrom": "protein",
+  "db": "protein",
   "idlist": {
     "@context": {
       "@vocab": "http://rdf.ncbi.nlm.nih.gov/db/protein/"
