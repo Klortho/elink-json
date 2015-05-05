@@ -3,9 +3,11 @@
   Example from
   http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
       ?dbfrom=pubmed&id=1000,2000&linkname=pubmed_pubmed_five
-  One of Sasha's examples on EU-2365.
 -->
-<!DOCTYPE eLinkResult PUBLIC "-//NLM//DTD eLinkResult, 23 November 2010//EN" "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
+<!DOCTYPE eLinkResult 
+  PUBLIC "-//NLM//DTD eLinkResult, 23 November 2010//EN" 
+  "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
+
 <eLinkResult>
 
     <LinkSet>
