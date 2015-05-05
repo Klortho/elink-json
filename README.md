@@ -1,3 +1,6 @@
+See [E-Utilities In Depth](http://www.ncbi.nlm.nih.gov/books/NBK25499/) for details
+about ELink.
+
 # Setup
 
 Serving the context file, for now, from 
@@ -8,10 +11,57 @@ Compile the DTD into an XSLT with
     dtd2xml2json --basexslt elink-jsonld-suppl.xslt eLink_101123.dtd \
         > elink-jsonld.xslt
 
-# Options:
+# JSON-LD issues
 
-* We don't have to have the accession numbers resolve to URIs.
+## Accession numbers resolving to URIs
 
+It's hard to specify the accession numbers to resolve to URIs. There are two
+options, and neither of them is attractive. 
+
+In the first option, we use a CURIE for each and every accession, like this:
+
+```json
+{
+  "@context": "http://chrismaloney.org/elink-jsonld/context.jsonld",
+  "from": [
+    "protein:15718680",
+    "protein:157427902"
+  ],
+  "protein_gene": [
+    "gene:522311",
+    "gene:3702"
+  ]
+}
+```
+
+This is extremely redundant, because all of the UIDs in a list are always from the same
+database.
+
+The second option is to redefine the context for each list, like this:
+
+```json
+{
+  "@context": "http://chrismaloney.org/elink-jsonld/context.jsonld",
+  "db": "protein",
+  "idlist": {
+    "@context": { "@vocab": "http://rdf.ncbi.nlm.nih.gov/db/protein/" },
+    "@set": [
+      "15718680",
+      "157427902"
+    ]
+  },
+  "protein_gene": {
+    "@context": { "@vocab": "http://rdf.ncbi.nlm.nih.gov/db/gene/" },
+    "@set": [
+      "522311",
+      "3702"
+    ]
+  }
+}
+```
+
+The problem with that is that it is not nearly as clean, and it introduces the obscure
+JSON-LD keywords into the result, that users won't be familiar with.
 
 # Examples
 

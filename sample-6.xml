@@ -15,21 +15,21 @@
       <IdUrlSet>
         <Id>19880848</Id>
         <ObjUrl>
-        <Url>http://eurheartj.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=19880848</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--highwire.stanford.edu-icons-externalservices-pubmed-custom-oxfordjournals_final_free.gif</IconUrl>
-        <SubjectType>publishers/providers</SubjectType>
-        <Category>Full Text Sources</Category>
-        <Attribute>free resource</Attribute>
-        <Attribute>full-text online</Attribute>
-        <Attribute>publisher of information in url</Attribute>
-        <Provider>
+          <Url>http://eurheartj.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=19880848</Url>
+          <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--highwire.stanford.edu-icons-externalservices-pubmed-custom-oxfordjournals_final_free.gif</IconUrl>
+          <SubjectType>publishers/providers</SubjectType>
+          <Category>Full Text Sources</Category>
+          <Attribute>free resource</Attribute>
+          <Attribute>full-text online</Attribute>
+          <Attribute>publisher of information in url</Attribute>
+          <Provider>
             <Name>HighWire</Name>
             <NameAbbr>HighWire</NameAbbr>
             <Id>3051</Id>
             <Url LNG="EN">http://highwire.stanford.edu</Url>
-        </Provider>
-    </ObjUrl>
-    <ObjUrl>
+          </Provider>
+      </ObjUrl>
+      <ObjUrl>
         
         <Url>http://openurl.ebscohost.com/linksvc/linking.aspx?genre=article&amp;sid=PubMed&amp;issn=0195-668X&amp;title=Eur%20Heart%20J&amp;volume=30&amp;issue=23&amp;spage=2838&amp;atitle=Treating%20inflammation%20in%20atherosclerotic%20cardiovascular%20disease:%20emerging%20therapies.&amp;aulast=Klingenberg&amp;date=2009</Url>
         <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--imageserver.ebscohost.com-pubmed-ehost-logo.gif</IconUrl>

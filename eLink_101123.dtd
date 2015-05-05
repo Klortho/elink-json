@@ -18,7 +18,7 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
 <!ELEMENT   Info            (#PCDATA)>  <!-- .+ -->
 
 <!--~~ <Id>
-~~json <number/>
+~~json <custom/>
 ~~-->
 <!ELEMENT   Id              (#PCDATA)>  <!-- \d+ -->
 <!ATTLIST   Id      
@@ -41,15 +41,12 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
 <!ELEMENT   IdList      (Id*)>
 
 <!-- cmd=neighbor -->
-<!--~~ <Link>
-~~json <number select='Id'/>
-~~-->
 <!ELEMENT   Link        (Id, Score?)>
 <!ELEMENT   QueryKey        (#PCDATA)>
 
 
 <!--~~ <LinkSetDb>
-~~json <ignore/>
+~~json <custom/>
 ~~-->
 <!ELEMENT   LinkSetDb   (DbTo, LinkName, (Link*|Info), ERROR?)>
 <!ELEMENT   LinkSetDbHistory    (DbTo, LinkName, (QueryKey|Info), ERROR?)>
@@ -91,15 +88,33 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
                 SubProvider?
             )>
 
+<!--~~ <IdUrlList>
+~~json <custom/>
+~~-->
 <!ELEMENT   IdUrlSet    (Id,(ObjUrl+|Info))>
 
 <!ELEMENT   FirstChars  (FirstChar*)>
 
 <!ELEMENT   LinkInfo    (DbTo, LinkName, MenuTag?, HtmlTag?, Url?, Priority)>
+
+<!--~~ <IdLinkSet>
+~~json 
+  <object>
+    <number key='id' select='Id'/>
+    <array key='linkinfos' select='LinkInfo'/>
+  </object>
+~~-->
 <!ELEMENT   IdLinkSet   (Id, LinkInfo*)>
+
+<!--~~ <IdUrlList>
+~~json <array/>
+~~-->
 <!ELEMENT   IdUrlList   (IdUrlSet* | FirstChars*)>
 
 <!-- cmd=ncheck & lcheck & acheck -->
+<!--~~ <IdCheckList>
+~~ json <custom/>
+~~-->
 <!ELEMENT   IdCheckList ((Id|IdLinkSet)*,ERROR?)>
 
 

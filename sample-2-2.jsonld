@@ -1,12 +1,13 @@
 {
   "@context": "http://chrismaloney.org/elink-jsonld/context.jsonld",
-  "db": "pubmed",
+  "dbfrom": "pubmed",
   "idlist": [
-    "157427902"
+    157427902
   ],
-  "pubmed_pubmed": {
-    "db": "pubmed",
-    "linklist": [
+  "linksetdb": {
+    "dbto": "pubmed",
+    "linkname": "pubmed_pubmed",
+    "links": [
       {
         "id": "15876306",
         "score": "75133399"
@@ -17,9 +18,10 @@
       }
     ]
   },
-  "pubmed_pubmed_citedin": {
-    "db": "pubmed",
-    "linklist": [
+  "linksetdb": {
+    "dbto": "pubmed",
+    "linkname": "pubmed_pubmed_citedin",
+    "links": [
       {
         "id": "24952205",
         "score": "20210808"
@@ -30,9 +32,10 @@
       }
     ]
   },
-  "pubmed_pubmed_combined": {
-    "db": "pubmed",
-    "linklist": [
+  "linksetdb": {
+    "dbto": "pubmed",
+    "linkname": "pubmed_pubmed_combined",
+    "links": [
       {
         "id": "15876306",
         "score": "75133399"
