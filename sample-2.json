@@ -3,18 +3,22 @@
         "type": "elink",
         "version": "0.3"
     },
-    "dbfrom": "pubmed",
-    "idlist": [
-        1000,
-        2000
-    ],
-    "linksetdb": {
-        "dbto": "pubmed",
-        "linkname": "pubmed_pubmed_five",
-        "links": [
-            2000,
-            1000,
-            1002
-        ]
-    }
+    "linksets": [
+        {
+            "dbfrom": "pubmed",
+            "idlist": [
+                1000,
+                2000
+            ],
+            "linksetdb": {
+                "dbto": "pubmed",
+                "linkname": "pubmed_pubmed_five",
+                "links": [
+                    2000,
+                    1000,
+                    1002
+                ]
+            }
+        }
+    ]
 }

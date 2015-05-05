@@ -3,37 +3,45 @@
         "type": "elink",
         "version": "0.3"
     },
-    "dbfrom": "protein",
-    "idlist": [
-        15718680
-    ],
-    "linksetdb": {
-        "dbto": "gene",
-        "linkname": "protein_gene",
-        "links": [
-            3702
-        ]
-    },
-    "dbfrom": "protein",
-    "idlist": [
-        157427902
-    ],
-    "linksetdb": {
-        "dbto": "gene",
-        "linkname": "protein_gene",
-        "links": [
-            522311
-        ]
-    },
-    "dbfrom": "protein",
-    "idlist": [
-        119703751
-    ],
-    "linksetdb": {
-        "dbto": "gene",
-        "linkname": "protein_gene",
-        "links": [
-            16428
-        ]
-    }
+    "linksets": [
+        {
+            "dbfrom": "protein",
+            "idlist": [
+                15718680
+            ],
+            "linksetdb": {
+                "dbto": "gene",
+                "linkname": "protein_gene",
+                "links": [
+                    3702
+                ]
+            }
+        },
+        {
+            "dbfrom": "protein",
+            "idlist": [
+                157427902
+            ],
+            "linksetdb": {
+                "dbto": "gene",
+                "linkname": "protein_gene",
+                "links": [
+                    522311
+                ]
+            }
+        },
+        {
+            "dbfrom": "protein",
+            "idlist": [
+                119703751
+            ],
+            "linksetdb": {
+                "dbto": "gene",
+                "linkname": "protein_gene",
+                "links": [
+                    16428
+                ]
+            }
+        }
+    ]
 }

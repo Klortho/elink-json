@@ -3,11 +3,110 @@
         "type": "elink",
         "version": "0.3"
     },
-    "dbfrom": "pubmed",
-    "idurllist": [
+    "linksets": [
         {
-        },
-        {
+            "dbfrom": "pubmed",
+            "idurllist": [
+                {
+                    "id": 19880848,
+                    "objurls": [
+                        {
+                            "url": {
+                                "lng": "EN",
+                                "value": "http://eurheartj.oxfordjournals....pmid=19880848"
+                            },
+                            "iconurl": {
+                                "lng": "EN",
+                                "value": "//www.ncbi.nlm.nih.gov/corehtml/...gif"
+                            },
+                            "subjecttypes": [
+                                "publishers/providers"
+                            ],
+                            "categories": [
+                                "Full Text Sources"
+                            ],
+                            "attributes": [
+                                "free resource",
+                                "full-text online",
+                                "publisher of information in url"
+                            ],
+                            "provider": {
+                                "name": "HighWire",
+                                "nameabbr": "HighWire",
+                                "id": 3051,
+                                "url": {
+                                    "lng": "EN",
+                                    "value": "http://highwire.stanford.edu"
+                                }
+                            }
+                        },
+                        {
+                            "url": {
+                                "lng": "EN",
+                                "value": "http://openurl.ebscohost.com/linksvc...date=2009"
+                            },
+                            "iconurl": {
+                                "lng": "EN",
+                                "value": "//www.ncbi.nlm.nih.gov/corehtml/...gif"
+                            },
+                            "subjecttypes": [
+                                "aggregators"
+                            ],
+                            "categories": [
+                                "Full Text Sources"
+                            ],
+                            "attributes": [
+                                "full-text online",
+                                "subscription/membership/fee required"
+                            ],
+                            "provider": {
+                                "name": "EBSCO",
+                                "nameabbr": "EBSCOPub",
+                                "id": 3327,
+                                "url": {
+                                    "lng": "EN",
+                                    "value": "http://www.ebscohost.com./"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 19822630,
+                    "objurls": [
+                        {
+                            "url": {
+                                "lng": "EN",
+                                "value": "http://tar.sagepub.c...=19822630"
+                            },
+                            "iconurl": {
+                                "lng": "EN",
+                                "value": "//www.ncbi.nlm.ni...gif"
+                            },
+                            "subjecttypes": [
+                                "publishers/providers"
+                            ],
+                            "categories": [
+                                "Full Text Sources"
+                            ],
+                            "attributes": [
+                                "full-text pdf",
+                                "publisher of information in url",
+                                "subscription/membership/fee required"
+                            ],
+                            "provider": {
+                                "name": "HighWire",
+                                "nameabbr": "HighWire",
+                                "id": 3051,
+                                "url": {
+                                    "lng": "EN",
+                                    "value": "http://highwire.stanford.edu"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

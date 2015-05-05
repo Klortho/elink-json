@@ -77,6 +77,16 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
                 IconUrl?
             )>
 
+<!--~~ <ObjUrl>
+~~json
+  <object>
+    <member select='Url|IconUrl|LinkName'/>
+    <array key='subjecttypes' select='SubjectType'/>
+    <array key='categories' select='Category'/>
+    <array key='attributes' select='Attribute'/>
+    <member select='Provider|SubProvider'/>
+  </object>
+~~-->
 <!ELEMENT   ObjUrl  (
                 Url,
                 IconUrl?,
@@ -120,13 +130,23 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
 
 <!-- Common -->
 <!--~~ <LinkSet>
-~~ json <member/>
+~~ json <object/>
 ~~-->
-<!ELEMENT   LinkSet     (DbFrom, 
-                ((IdList?, ((ERROR?, LinkSetDb)*  |  (LinkSetDbHistory*, WebEnv))) | IdUrlList | IdCheckList | ERROR), ERROR?  
-                )>
+<!ELEMENT   LinkSet
+  ( DbFrom, 
+    ( ( IdList?, 
+        ( (ERROR?, LinkSetDb)* | 
+          (LinkSetDbHistory*, WebEnv)
+        )
+      ) | 
+      IdUrlList | 
+      IdCheckList | 
+      ERROR 
+    ), 
+    ERROR?  
+  )>
 
 <!--~~ <eLinkResult>
-~~ json <member/>
+~~ json <custom/>
 ~~-->
 <!ELEMENT   eLinkResult (LinkSet*, ERROR?)>

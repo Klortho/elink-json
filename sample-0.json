@@ -3,15 +3,19 @@
         "type": "elink",
         "version": "0.3"
     },
-    "dbfrom": "protein",
-    "idlist": [
-        15718680
-    ],
-    "linksetdb": {
-        "dbto": "gene",
-        "linkname": "protein_gene",
-        "links": [
-            3702
-        ]
-    }
+    "linksets": [
+        {
+            "dbfrom": "protein",
+            "idlist": [
+                15718680
+            ],
+            "linksetdb": {
+                "dbto": "gene",
+                "linkname": "protein_gene",
+                "links": [
+                    3702
+                ]
+            }
+        }
+    ]
 }

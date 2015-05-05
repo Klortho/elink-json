@@ -3,17 +3,21 @@
         "type": "elink",
         "version": "0.3"
     },
-    "dbfrom": "nuccore",
-    "idchecklist": {
-        "ids": [
-            {
-                "id": 21614549,
-                "hasneighbor": "Y"
-            },
-            {
-                "id": 219152114,
-                "hasneighbor": "N"
+    "linksets": [
+        {
+            "dbfrom": "nuccore",
+            "idchecklist": {
+                "ids": [
+                    {
+                        "id": 21614549,
+                        "hasneighbor": "Y"
+                    },
+                    {
+                        "id": 219152114,
+                        "hasneighbor": "N"
+                    }
+                ]
             }
-        ]
-    }
+        }
+    ]
 }

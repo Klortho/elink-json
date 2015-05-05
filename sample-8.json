@@ -3,11 +3,180 @@
         "type": "elink",
         "version": "0.3"
     },
-    "dbfrom": "pubmed",
-    "idurllist": [
+    "linksets": [
         {
-        },
-        {
+            "dbfrom": "pubmed",
+            "idurllist": [
+                {
+                    "id": 19880848,
+                    "objurls": [
+                        {
+                            "url": {
+                                "lng": "EN",
+                                "value": "http://eurheartj.oxfordjournals.org/...pmid=19880848"
+                            },
+                            "iconurl": {
+                                "lng": "EN",
+                                "value": "//www.ncbi.nlm.nih.gov/corehtml/q...gif"
+                            },
+                            "subjecttypes": [
+                                "publishers/providers"
+                            ],
+                            "categories": [
+                                "Full Text Sources"
+                            ],
+                            "attributes": [
+                                "free resource",
+                                "full-text online",
+                                "publisher of information in url"
+                            ],
+                            "provider": {
+                                "name": "HighWire",
+                                "nameabbr": "HighWire",
+                                "id": 3051,
+                                "url": {
+                                    "lng": "EN",
+                                    "value": "http://highwire.stanford.edu"
+                                }
+                            }
+                        },
+                        {
+                            "url": {
+                                "lng": "EN",
+                                "value": "http://TF5LU9YM5N.search.serialssolutions.com/...pmid=19880848"
+                            },
+                            "iconurl": {
+                                "lng": "EN",
+                                "value": "//www.ncbi.nlm.nih.gov/corehtml/....gif"
+                            },
+                            "subjecttypes": [
+                                "libraries"
+                            ],
+                            "categories": [
+                                "Libraries"
+                            ],
+                            "attributes": [
+                                "free resource"
+                            ],
+                            "provider": {
+                                "name": "Cambridge University Libraries, United Kingdom",
+                                "nameabbr": "igbcambulib",
+                                "id": 6560,
+                                "url": {
+                                    "lng": "EN",
+                                    "value": "http://www.lib.cam.ac.uk/"
+                                },
+                                "iconurl": {
+                                    "lng": "EN",
+                                    "value": "http://www.lib.cam.ac.uk/newton/images/e-journals_thin.gif"
+                                }
+                            }
+                        },
+                        {
+                            "url": {
+                                "lng": "EN",
+                                "value": "http://linksource.ebsco.com/shib.9b5ec0ac-235...pmid:19880848"
+                            },
+                            "iconurl": {
+                                "lng": "EN",
+                                "value": "//www.ncbi.nlm.nih.gov/corehtml/....gif"
+                            },
+                            "linkname": "LinkSource",
+                            "subjecttypes": [
+                                "libraries"
+                            ],
+                            "categories": [
+                                "Libraries"
+                            ],
+                            "attributes": [
+                                "free resource"
+                            ],
+                            "provider": {
+                                "name": "Camden County College, NJ",
+                                "nameabbr": "njcacclib",
+                                "id": 6103,
+                                "url": {
+                                    "lng": "EN",
+                                    "value": "http://library.camdencc.edu"
+                                },
+                                "iconurl": {
+                                    "lng": "EN",
+                                    "value": "http://www.ncbi.nlm.nih.gov/projects/linkout/images/library.gif"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 19822630,
+                    "objurls": [
+                        {
+                            "url": {
+                                "lng": "EN",
+                                "value": "http://tar.sagepub.com/cgi/pmidlookup?view=long&pmid=19822630"
+                            },
+                            "iconurl": {
+                                "lng": "EN",
+                                "value": "//www.ncbi.nlm.nih.gov/corehtml/....gif"
+                            },
+                            "subjecttypes": [
+                                "publishers/providers"
+                            ],
+                            "categories": [
+                                "Full Text Sources"
+                            ],
+                            "attributes": [
+                                "full-text pdf",
+                                "publisher of information in url",
+                                "subscription/membership/fee required"
+                            ],
+                            "provider": {
+                                "name": "HighWire",
+                                "nameabbr": "HighWire",
+                                "id": 3051,
+                                "url": {
+                                    "lng": "EN",
+                                    "value": "http://highwire.stanford.edu"
+                                }
+                            }
+                        },
+                        {
+                            "url": {
+                                "lng": "EN",
+                                "value": "/linkout/pmliblink.cgi?id=19822630&lib=iauchlib"
+                            },
+                            "iconurl": {
+                                "lng": "EN",
+                                "value": "//www.ncbi.nlm.nih.gov/corehtml/query/....gif"
+                            },
+                            "linkname": "Electronic Full-text",
+                            "subjecttypes": [
+                                "libraries"
+                            ],
+                            "categories": [
+                                "Libraries"
+                            ],
+                            "attributes": [
+                                "electronic full-text",
+                                "free resource"
+                            ],
+                            "provider": {
+                                "name": "ACT Health Library, Australia",
+                                "nameabbr": "iauchlib",
+                                "id": 3487,
+                                "url": {
+                                    "lng": "EN",
+                                    "value": "http://tch.anu.edu.au"
+                                },
+                                "iconurl": {
+                                    "lng": "EN",
+                                    "value": "http://tch.anu.edu.au/images/act-health-logo-sml.gif"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
