@@ -88,7 +88,7 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
                 SubProvider?
             )>
 
-<!--~~ <IdUrlList>
+<!--~~ <IdUrlSet>
 ~~json <custom/>
 ~~-->
 <!ELEMENT   IdUrlSet    (Id,(ObjUrl+|Info))>

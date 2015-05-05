@@ -1,0 +1,49 @@
+{
+    "header": {
+        "type": "elink",
+        "version": "0.3"
+    },
+    "dbfrom": "protein",
+    "idchecklist": {
+        "idlinksets": [
+            {
+                "id": 15718680,
+                "linkinfos": [
+                    {
+                        "dbto": "bioproject",
+                        "linkname": "protein_bioproject",
+                        "menutag": "BioProject Links",
+                        "htmltag": "BioProject",
+                        "priority": "128"
+                    },
+                    {
+                        "dbto": "biosystems",
+                        "linkname": "protein_biosystems",
+                        "menutag": "BioSystem Links",
+                        "htmltag": "BioSystems",
+                        "priority": "128"
+                    }
+                ]
+            },
+            {
+                "id": 157427902,
+                "linkinfos": [
+                    {
+                        "dbto": "bioproject",
+                        "linkname": "protein_bioproject",
+                        "menutag": "BioProject Links",
+                        "htmltag": "BioProject",
+                        "priority": "128"
+                    },
+                    {
+                        "dbto": "biosystems",
+                        "linkname": "protein_biosystems",
+                        "menutag": "BioSystem Links",
+                        "htmltag": "BioSystems",
+                        "priority": "128"
+                    }
+                ]
+            }
+        ]
+    }
+}
