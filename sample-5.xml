@@ -2,7 +2,7 @@
 <!--
   Example from
   http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
-    ?dbfrom=nuccore&id=21614549,219152114&cmd=ncheck
+      ?dbfrom=protein&db=gene&id=15718680,157427902&cmd=neighbor_history
 -->
 
 <!DOCTYPE eLinkResult 
@@ -10,11 +10,17 @@
   "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
 
 <eLinkResult>
-    <LinkSet>
-        <DbFrom>nuccore</DbFrom>
-        <IdCheckList>
-            <Id HasNeighbor="Y">21614549</Id>
-            <Id HasNeighbor="N">219152114</Id>
-        </IdCheckList>
-    </LinkSet>
+  <LinkSet>
+    <DbFrom>protein</DbFrom>
+    <IdList>
+      <Id>15718680</Id>
+      <Id>157427902</Id>
+    </IdList>
+    <LinkSetDbHistory>
+      <DbTo>gene</DbTo>
+      <LinkName>protein_gene</LinkName>
+      <QueryKey>1</QueryKey>
+    </LinkSetDbHistory>
+    <WebEnv>NCID_1_75529689_130.14.22.215_9001_1430190587_614820856_0MetA0_S_MegaStore_F_1</WebEnv>
+  </LinkSet>
 </eLinkResult>

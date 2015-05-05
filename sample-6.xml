@@ -2,159 +2,19 @@
 <!--
   Example from
   http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
-    ?dbfrom=pubmed&id=19880848,19822630&cmd=llinks
+    ?dbfrom=nuccore&id=21614549,219152114&cmd=ncheck
 -->
+
 <!DOCTYPE eLinkResult 
   PUBLIC "-//NLM//DTD eLinkResult, 23 November 2010//EN" 
   "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
 
 <eLinkResult>
-  <LinkSet>
-    <DbFrom>pubmed</DbFrom>
-    <IdUrlList>
-      <IdUrlSet>
-        <Id>19880848</Id>
-        <ObjUrl>
-          <Url>http://eurheartj.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=19880848</Url>
-          <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--highwire.stanford.edu-icons-externalservices-pubmed-custom-oxfordjournals_final_free.gif</IconUrl>
-          <SubjectType>publishers/providers</SubjectType>
-          <Category>Full Text Sources</Category>
-          <Attribute>free resource</Attribute>
-          <Attribute>full-text online</Attribute>
-          <Attribute>publisher of information in url</Attribute>
-          <Provider>
-            <Name>HighWire</Name>
-            <NameAbbr>HighWire</NameAbbr>
-            <Id>3051</Id>
-            <Url LNG="EN">http://highwire.stanford.edu</Url>
-          </Provider>
-      </ObjUrl>
-      <ObjUrl>
-        
-        <Url>http://openurl.ebscohost.com/linksvc/linking.aspx?genre=article&amp;sid=PubMed&amp;issn=0195-668X&amp;title=Eur%20Heart%20J&amp;volume=30&amp;issue=23&amp;spage=2838&amp;atitle=Treating%20inflammation%20in%20atherosclerotic%20cardiovascular%20disease:%20emerging%20therapies.&amp;aulast=Klingenberg&amp;date=2009</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--imageserver.ebscohost.com-pubmed-ehost-logo.gif</IconUrl>
-        <SubjectType>aggregators</SubjectType>
-        <Category>Full Text Sources</Category>
-        <Attribute>full-text online</Attribute>
-        <Attribute>subscription/membership/fee required</Attribute>
-        <Provider>
-            <Name>EBSCO</Name>
-            <NameAbbr>EBSCOPub</NameAbbr>
-            <Id>3327</Id>
-            <Url LNG="EN">http://www.ebscohost.com./</Url>
-        </Provider>
-    </ObjUrl>
-    <ObjUrl>
-        
-        <Url>http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=linkout&amp;SEARCH=19880848.ui</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--www.ovid.com-site-images-ovidpubmed.jpg</IconUrl>
-        <SubjectType>aggregators</SubjectType>
-        <Category>Full Text Sources</Category>
-        <Attribute>full-text online</Attribute>
-        <Attribute>subscription/membership/fee required</Attribute>
-        <Provider>
-            <Name>Ovid Technologies, Inc.</Name>
-            <NameAbbr>Ovid</NameAbbr>
-            <Id>3682</Id>
-            <Url LNG="EN">http://www.ovid.com/</Url>
-            <IconUrl LNG="EN">http://www.ovid.com/site/images/ovidpubmed.jpg</IconUrl>
-        </Provider>
-    </ObjUrl>
-    <ObjUrl>
-        
-        <Url>http://www.nlm.nih.gov/medlineplus/atherosclerosis.html</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--www.nlm.nih.gov-medlineplus-images-linkout_sm.gif</IconUrl>
-        <LinkName>Atherosclerosis</LinkName>
-        <SubjectType>consumer health</SubjectType>
-        <Category>Medical</Category>
-        <Attribute>free resource</Attribute>
-        <Provider>
-            <Name>MedlinePlus Health Information</Name>
-            <NameAbbr>MEDPLUS</NameAbbr>
-            <Id>3162</Id>
-            <Url LNG="EN">http://medlineplus.gov/</Url>
-            <IconUrl LNG="EN">http://www.nlm.nih.gov/medlineplus/images/linkout_sm.gif</IconUrl>
-        </Provider>
-    </ObjUrl>
-    <ObjUrl>
-        
-        <Url>https://www.researchgate.net/publication/e/pm/19880848?ln_t=p&amp;ln_o=linkout</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/https:--sc1.rgstatic.net-c-a-images-external-linkout-view-author-profiles.png</IconUrl>
-        <LinkName>Access more work from the authors</LinkName>
-        <SubjectType>author profiles</SubjectType>
-        <Category>Other Literature Sources</Category>
-        <Attribute>free resource</Attribute>
-        <Provider>
-            <Name>ResearchGate</Name>
-            <NameAbbr>researchgate</NameAbbr>
-            <Id>8880</Id>
-            <Url LNG="EN">http://www.researchgate.net</Url>
-        </Provider>
-    </ObjUrl>
-</IdUrlSet><IdUrlSet>
-    <Id>19822630</Id>
-    <ObjUrl>
-        
-        <Url>http://tar.sagepub.com/cgi/pmidlookup?view=long&amp;pmid=19822630</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--highwire.stanford.edu-icons-externalservices-pubmed-sage.gif</IconUrl>
-        <SubjectType>publishers/providers</SubjectType>
-        <Category>Full Text Sources</Category>
-        <Attribute>full-text pdf</Attribute>
-        <Attribute>publisher of information in url</Attribute>
-        <Attribute>subscription/membership/fee required</Attribute>
-        <Provider>
-            <Name>HighWire</Name>
-            <NameAbbr>HighWire</NameAbbr>
-            <Id>3051</Id>
-            <Url LNG="EN">http://highwire.stanford.edu</Url>
-        </Provider>
-    </ObjUrl>
-    <ObjUrl>
-        
-        <Url>http://www.diseaseinfosearch.org/result/633</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--geneticalliance.org-sites-default-files-images-DISlogo.jpg</IconUrl>
-        <LinkName>Asthma</LinkName>
-        <SubjectType>consumer health</SubjectType>
-        <Category>Medical</Category>
-        <Attribute>free resource</Attribute>
-        <Provider>
-            <Name>Genetic Alliance</Name>
-            <NameAbbr>GA</NameAbbr>
-            <Id>6412</Id>
-            <Url/>
-        </Provider>
-    </ObjUrl>
-    <ObjUrl>
-        
-        <Url>http://www.nlm.nih.gov/medlineplus/asthma.html</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/http:--www.nlm.nih.gov-medlineplus-images-linkout_sm.gif</IconUrl>
-        <LinkName>Asthma</LinkName>
-        <SubjectType>consumer health</SubjectType>
-        <Category>Medical</Category>
-        <Attribute>free resource</Attribute>
-        <Provider>
-            <Name>MedlinePlus Health Information</Name>
-            <NameAbbr>MEDPLUS</NameAbbr>
-            <Id>3162</Id>
-            <Url LNG="EN">http://medlineplus.gov/</Url>
-            <IconUrl LNG="EN">http://www.nlm.nih.gov/medlineplus/images/linkout_sm.gif</IconUrl>
-        </Provider>
-    </ObjUrl>
-    <ObjUrl>
-        
-        <Url>https://www.researchgate.net/publication/e/pm/19822630?ln_t=p&amp;ln_o=linkout</Url>
-        <IconUrl LNG="EN">//www.ncbi.nlm.nih.gov/corehtml/query/egifs/https:--sc1.rgstatic.net-c-a-images-external-linkout-view-author-profiles.png</IconUrl>
-        <LinkName>Access more work from the authors</LinkName>
-        <SubjectType>author profiles</SubjectType>
-        <Category>Other Literature Sources</Category>
-        <Attribute>free resource</Attribute>
-        <Provider>
-            <Name>ResearchGate</Name>
-            <NameAbbr>researchgate</NameAbbr>
-            <Id>8880</Id>
-            <Url LNG="EN">http://www.researchgate.net</Url>
-        </Provider>
-    </ObjUrl>
-</IdUrlSet></IdUrlList></LinkSet>
-
+    <LinkSet>
+        <DbFrom>nuccore</DbFrom>
+        <IdCheckList>
+            <Id HasNeighbor="Y">21614549</Id>
+            <Id HasNeighbor="N">219152114</Id>
+        </IdCheckList>
+    </LinkSet>
 </eLinkResult>

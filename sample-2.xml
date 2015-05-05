@@ -1,59 +1,32 @@
 <?xml version="1.0"?>
 <!--
-  Example from http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
-       ?dbfrom=pubmed&db=pubmed&id=20210808&cmd=neighbor_score
-  (elided)
+  Example from
+  http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
+      ?dbfrom=pubmed&id=1000,2000&linkname=pubmed_pubmed_five
+  One of Sasha's examples on EU-2365.
 -->
-
-<!DOCTYPE eLinkResult 
-  PUBLIC "-//NLM//DTD eLinkResult, 23 November 2010//EN" 
-  "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
-
+<!DOCTYPE eLinkResult PUBLIC "-//NLM//DTD eLinkResult, 23 November 2010//EN" "http://www.ncbi.nlm.nih.gov/entrez/query/DTD/eLink_101123.dtd">
 <eLinkResult>
+
     <LinkSet>
         <DbFrom>pubmed</DbFrom>
         <IdList>
-            <Id>20210808</Id>
+            <Id>1000</Id>
+            <Id>2000</Id>
         </IdList>
         <LinkSetDb>
             <DbTo>pubmed</DbTo>
-            <LinkName>pubmed_pubmed</LinkName>
+            <LinkName>pubmed_pubmed_five</LinkName>
             <Link>
-                <Id>15876306</Id>
-                <Score>75133399</Score>
+                <Id>2000</Id>
             </Link>
             <Link>
-                <Id>15466689</Id>
-                <Score>66865452</Score>
-            </Link>
-            <!--  ...  -->
-        </LinkSetDb>
-        <LinkSetDb>
-            <DbTo>pubmed</DbTo>
-            <LinkName>pubmed_pubmed_citedin</LinkName>
-            <Link>
-                <Id>24952205</Id>
-                <Score>20210808</Score>
+                <Id>1000</Id>
             </Link>
             <Link>
-                <Id>24915164</Id>
-                <Score>20210808</Score>
+                <Id>1002</Id>
             </Link>
             <!-- ... -->
         </LinkSetDb>
-        <LinkSetDb>
-            <DbTo>pubmed</DbTo>
-            <LinkName>pubmed_pubmed_combined</LinkName>
-            <Link>
-                <Id>15876306</Id>
-                <Score>75133399</Score>
-            </Link>
-            <Link>
-                <Id>15466689</Id>
-                <Score>66865452</Score>
-            </Link>
-            <!-- ... -->
-        </LinkSetDb>
-        <!-- ... -->
     </LinkSet>
 </eLinkResult>

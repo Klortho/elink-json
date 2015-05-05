@@ -1,5 +1,0 @@
-{
-  "@context": "http://chrismaloney.org/elink-jsonld/context.jsonld",
-  "@id": "protein:15718680",
-  "protein_gene": "gene:3702"
-}
