@@ -38,6 +38,9 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
 <!ELEMENT   HtmlTag         (#PCDATA)>  <!-- \S+ -->
 <!ELEMENT   Priority        (#PCDATA)>  <!-- \S+ -->
 
+<!--~~ <IdList>
+~~json <custom/>
+~~-->
 <!ELEMENT   IdList      (Id*)>
 
 <!-- cmd=neighbor -->
@@ -99,7 +102,12 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
             )>
 
 <!--~~ <IdUrlSet>
-~~json <custom/>
+~~json
+  <object>
+    <member select='Id'/>
+    <array key='objurls' select='ObjUrl'/>
+    <member select='Info'/>
+  </object>
 ~~-->
 <!ELEMENT   IdUrlSet    (Id,(ObjUrl+|Info))>
 
@@ -108,7 +116,7 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
 <!ELEMENT   LinkInfo    (DbTo, LinkName, MenuTag?, HtmlTag?, Url?, Priority)>
 
 <!--~~ <IdLinkSet>
-~~json 
+~~json
   <object>
     <number key='id' select='Id'/>
     <array key='linkinfos' select='LinkInfo'/>
@@ -117,6 +125,8 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
 <!ELEMENT   IdLinkSet   (Id, LinkInfo*)>
 
 <!--~~ <IdUrlList>
+Convert this into a simple array. IdUrlSet's are always rendered as objects, and FirstChars' are always
+rendered as arrays, so there's no ambiguity.
 ~~json <array/>
 ~~-->
 <!ELEMENT   IdUrlList   (IdUrlSet* | FirstChars*)>
@@ -130,7 +140,7 @@ $Id: eLink_101123.dtd 349314 2012-01-09 23:26:00Z fialkov $
 
 <!-- Common -->
 <!--~~ <LinkSet>
-~~ json <object/>
+~~ json <custom/>
 ~~-->
 <!ELEMENT   LinkSet
   ( DbFrom, 

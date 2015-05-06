@@ -6,15 +6,14 @@
 
   <!-- 
     <Id> is special. 99% of the time, it appears without any attributes, so we'll write it to JSON
-    as a simple number. But when any of the siblings contain an attribute, then all of the Ids in
-    this collection must be written as objects.
+    as a simple number. But when any Id of a group of Ids includes an attribute (either @HasLinkOut
+    or @HasNeighbor), then all of the Ids in that group must be written as objects.
     
     The following template only ever matches an Id when it appears by itself, not as a group.
-    That happens inside (Link, Provider, IdUrlSet,
-    IdLinkSet. 
+    That happens inside Link, Provider, IdUrlSet, and IdLinkSet. 
     
-    In those cases where Ids appear as a group (IdList or IdCheckList),
-    see the custom templates for those elements.
+    In those cases where Ids appear as a group, inside IdList or IdCheckList, see the custom templates for 
+    those elements.
   -->
   <xsl:template match='Id'>
     <xsl:param name="context" select="'unknown'"/>
@@ -55,10 +54,10 @@
     <o>
       <xsl:if test="$context = 'o'">
         <xsl:attribute name="k">
-          <xsl:value-of select="np:translate-name()"/>
+          <xsl:value-of select="'id'"/>
         </xsl:attribute>
       </xsl:if>
-      <n k="id">
+      <n k="value">
         <xsl:value-of select="normalize-space(.)"/>
       </n>
       <xsl:apply-templates select="@*">
@@ -80,7 +79,7 @@
         </xsl:attribute>
       </xsl:if>
       <xsl:choose>
-        <xsl:when test="Id[@HasLinkOut or @HasNeighbor]">
+        <xsl:when test="Id[@*]">
           <xsl:for-each select="Id">
             <xsl:call-template name="id-as-object">
               <xsl:with-param name="context" select="'a'"/>
@@ -98,7 +97,8 @@
 
 
   <!-- 
-    <IdList>
+    <IdList> - This calls the id-group template, to ensure that all of the Id children are
+    rendered the same way - either as a number or as an object.
   -->
   <xsl:template match="IdList">
     <xsl:param name="context" select="'unknown'"/>
@@ -106,7 +106,13 @@
       <xsl:with-param name="context" select="$context"/>
     </xsl:call-template>
   </xsl:template>
-  
+
+  <!--
+    <LinkSetDb> - This custom template allows us to handle the Link children specially. Most often,
+    a Link element will just have a single Id child. If that's the case for all of the Link children
+    here, then we'll render them as an array of numbers. But if any of the Link children have a
+    Score, then we'll render them all as objects.
+  -->
 
   <xsl:template match="LinkSetDb">
     <xsl:param name="context" select="'unknown'"/>
@@ -116,7 +122,7 @@
           <xsl:value-of select="'linksetdb'"/>
         </xsl:attribute>
       </xsl:if>
-      <xsl:apply-templates select='DbTo|LinkName|Info|ERROR'>
+      <xsl:apply-templates select='DbTo|LinkName|Info'>
         <xsl:with-param name="context" select="'o'"/>
       </xsl:apply-templates>
       <xsl:if test='Link'>
@@ -139,11 +145,15 @@
           </xsl:choose>
         </a>
       </xsl:if>
+      <xsl:apply-templates select='ERROR'>
+        <xsl:with-param name="context" select="'o'"/>
+      </xsl:apply-templates>
     </o>
   </xsl:template>
 
   <!-- 
-    <IdCheckList>
+    <IdCheckList> - This calls the id-group template, to ensure that all of the Id children are
+    rendered the same way - either as a number or as an object.
   -->
   <xsl:template match="IdCheckList">
     <xsl:param name="context" select="'unknown'"/>
@@ -173,53 +183,30 @@
     </o>
   </xsl:template>
 
-  <xsl:template match='IdUrlSet'>
-    <xsl:param name="context" select="'unknown'"/>
-    <o>
-      <xsl:if test="$context = 'o'">
-        <xsl:attribute name="k">
-          <xsl:value-of select="'idchecklist'"/>
-        </xsl:attribute>
-      </xsl:if>
-      <xsl:apply-templates select="Id">
-        <xsl:with-param name="context" select="'o'"/>
-      </xsl:apply-templates>
-      <xsl:choose>
-        <xsl:when test="ObjUrl">
-          <a k='objurls'>
-            <xsl:apply-templates select="ObjUrl">
-              <xsl:with-param name="context" select="'a'"/>
-            </xsl:apply-templates>
-          </a>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:apply-templates select="Info">
-            <xsl:with-param name="context" select="'o'"/>
-          </xsl:apply-templates>
-        </xsl:otherwise>
-      </xsl:choose>
-    </o>
-  </xsl:template>
-
   <!-- 
-    LinkSet: context is array (these always appear inside a "linksets" array)
-    
+    <LinkSet> - context is array (these always appear inside a "linksets" array)
+    The content model allows for ERROR elements in several places. This puts them all at the end, and
+    renders them either as a single `ERROR` string (if there's only one) or an array of ERRORS. 
   -->
   <xsl:template match="LinkSet">
     <o>
       <xsl:apply-templates select="DbFrom|IdList">
         <xsl:with-param name="context" select="'o'"/>
       </xsl:apply-templates>
-      <a k='linksetdbs'>
-        <xsl:apply-templates select="LinkSetDb">
-          <xsl:with-param name="context" select="'a'"/>
-        </xsl:apply-templates>
-      </a>
-      <a k='linksetdbhistories'>
-        <xsl:apply-templates select="LinkSetDbHistory">
-          <xsl:with-param name="context" select="'a'"/>
-        </xsl:apply-templates>
-      </a>
+      <xsl:if test='LinkSetDb'>
+        <a k='linksetdbs'>
+          <xsl:apply-templates select="LinkSetDb">
+            <xsl:with-param name="context" select="'a'"/>
+          </xsl:apply-templates>
+        </a>
+      </xsl:if>
+      <xsl:if test='LinkSetDbHistory'>
+        <a k='linksetdbhistories'>
+          <xsl:apply-templates select="LinkSetDbHistory">
+            <xsl:with-param name="context" select="'a'"/>
+          </xsl:apply-templates>
+        </a>
+      </xsl:if>
       <xsl:apply-templates select="WebEnv|IdUrlList|IdCheckList">
         <xsl:with-param name="context" select="'o'"/>
       </xsl:apply-templates>
@@ -240,7 +227,9 @@
     </o>
   </xsl:template>
 
-
+  <!-- 
+    <eLinkResult> - Flatten the contents of this into the top-level object.
+  -->
 
   <xsl:template match="eLinkResult">
     <xsl:param name="context" select="'unknown'"/>
