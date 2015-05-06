@@ -6,21 +6,20 @@
     "linksets": [
         {
             "dbfrom": "protein",
-            "idlist": [
+            "ids": [
                 15718680,
                 157427902
             ],
-            "linksetdb": {
-                "dbto": "gene",
-                "linkname": "protein_gene",
-                "links": [
-                    {
-                        "id": 522311,
-                        "hasneighbor": "Y"
-                    },
-                    3702
-                ]
-            }
+            "linksetdbs": [
+                {
+                    "dbto": "gene",
+                    "linkname": "protein_gene",
+                    "links": [
+                        522311,
+                        3702
+                    ]
+                }
+            ]
         }
     ]
 }

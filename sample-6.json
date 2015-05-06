@@ -9,11 +9,11 @@
             "idchecklist": {
                 "ids": [
                     {
-                        "id": 21614549,
+                        "value": 21614549,
                         "hasneighbor": "Y"
                     },
                     {
-                        "id": 219152114,
+                        "value": 219152114,
                         "hasneighbor": "N"
                     }
                 ]

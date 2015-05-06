@@ -87,9 +87,11 @@
           </xsl:for-each>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:call-template name="id-as-number">
-            <xsl:with-param name="context" select="'a'"/>
-          </xsl:call-template>
+          <xsl:for-each select="Id">
+            <xsl:call-template name="id-as-number">
+              <xsl:with-param name="context" select="'a'"/>
+            </xsl:call-template>
+          </xsl:for-each>
         </xsl:otherwise>
       </xsl:choose>
     </a>

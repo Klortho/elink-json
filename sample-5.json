@@ -6,15 +6,17 @@
     "linksets": [
         {
             "dbfrom": "protein",
-            "idlist": [
+            "ids": [
                 15718680,
                 157427902
             ],
-            "linksetdbhistory": {
-                "dbto": "gene",
-                "linkname": "protein_gene",
-                "querykey": "1"
-            },
+            "linksetdbhistories": [
+                {
+                    "dbto": "gene",
+                    "linkname": "protein_gene",
+                    "querykey": "1"
+                }
+            ],
             "webenv": "NCID_1_75529689_130.14.22....MegaStore_F_1"
         }
     ]
